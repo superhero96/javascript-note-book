@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tacking decision</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <label for="">
+   <input type="checkbox" id="big" > Big
+  </label><br>
+
+  <label for="">
+   <input type="checkbox" id="green"  > Green
+  </label><br>
+
+  <h1 id="Myh1">Make it green</h1>
+
+<script>
+  function makeBig() {
+    if (big.checked) {
+      Myh1.classList.add('big');
+    } else {
+        Myh1.classList.remove('big');
+
+    }
+
+  }
+
+  big.onclick = makeBig;
+
+  function makeGreen() {
+    if (green.checked) {
+  Myh1.classList.add('green');
+  }
+   else {
+   Myh1.classList.remove('green');
+   }
+  }
+  green.onclick = makeGreen ;
+</script>
+</body>
+</html>

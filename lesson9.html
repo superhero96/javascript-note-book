@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+</head>
+<body>
+  <h1>Quiz Time!</h1>
+  <h3>Q1)Who is the dumbest in my group ?</h3>
+
+  <label for=""><br>
+    <input type="radio"  name ="Q1" id="q1a1"> Annu Pam
+  </label><br>
+
+  <label for=""><br>
+    <input type="radio"  name ="Q1" id="q1a2"> Visist
+  </label><br>
+
+  <label for=""><br>
+    <input type="radio"  name ="Q1" id="q1a3">  Ryan
+  </label><br>
+  
+
+  <label for=""><br>
+    <input type="radio"  name ="Q1" id="q1a4"> Nourope
+  </label><br>
+
+  <br><label for="">
+    <input type="radio"  name ="Q1" id="q1a5"> Aron
+  </label><br><br>
+
+<button id="myBtn">Check Answer</button>
+<h1 id = "result">...</h1>
+
+<script>
+  function answerChecker() {
+  if (q1a1.checked == true) {
+  result.textContent = "Correct!";
+  } else {
+  result.textContent = "Wrong!";
+
+  }
+  }
+
+  myBtn.onclick = answerChecker;
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>terms and condions</title>
+</head>
+<body>
+  <h1>Terms and Condions</h1>
+  <p>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+<label for="">
+  <br>  <input type="checkbox" id="myCheckbox">
+
+ I accept the terms and conditions <br>
+
+</label>
+
+<button  id="myButton">signup</button>
+
+<script>
+function eventHandler() {
+if (myCheckbox.checked) {
+  myButton.disabled = false;
+} else{
+  myButton.disabled = true;
+}
+
+}
+
+
+myCheckbox.onchange = eventHandler;
+window.onload = eventHandler;
+</script>
+</p>
+</body>
+</html>

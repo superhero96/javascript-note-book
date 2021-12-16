@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="https://miro.medium.com/max/1400/1*YWVxqyJjpz_B4cNVOxklbA.png" alt="" style="width: 480px;">
+
+<h1>the real name of spiderman is <span id="mySpan">...</span></h1>
+
+<img src="https://www.small-screen.co.uk/wp-content/uploads/2021/09/spider-men-andrew-garfield-tobey-maguire-tom-holland-spider-man-no-way-home-1050x591.jpg"alt=""><br>
+  <input type="text" id="myinput"><br>
+  <script>
+    function eventhandler() {
+      mySpan.textContent = myinput.value
+
+    }
+
+    myinput.oninput = eventhandler;
+  </script>
+</body>
+</html>
